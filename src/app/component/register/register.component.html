@@ -1,0 +1,84 @@
+<form>
+
+  <label>ID : </label>
+  <input type="text" [(ngModel)]="customer.id" name="id" placeholder="Pls Enter Id"/><br><br>
+
+  <label>FIRST NAME : </label>
+  <input type="text" [(ngModel)]="customer.firstname" name="firstname" placeholder="Pls Enter First Name"/><br><br>
+
+  <label>LAST NAME : </label>
+  <input type="text" [(ngModel)]="customer.lastname" name="lastname" placeholder="Pls Enter Last Name"/><br><br>
+
+  <label>FATHER NAME : </label>
+  <input type="text" [(ngModel)]="customer.fathername" name="fathername" placeholder="Pls Enter Father Name"/><br><br>
+
+
+  <label>EMAIL : </label>
+  <input type="email" [(ngModel)]="customer.emailid" name="emailid" placeholder="Pls Enter Email Id"/><br><br>
+
+
+  <label>AADHAR NO : </label>
+  <input type="text" [(ngModel)]="customer.aadharcar" name="aadharcar" placeholder="Pls Enter Aaadhar no"/><br><br>
+  
+  <label>PAN CARD : </label>
+  <input type="text" [(ngModel)]="customer.pancard" name="pancard" placeholder="Pls Enter Pancard No"/><br><br>
+
+  <label>CONTACT NO : </label>
+  <input type="text" [(ngModel)]="customer.contactno" name="contactno"  placeholder="Pls Enter Contact No"/><br><br>
+
+  <label>OCCUPATION : </label>
+  <input type="text" [(ngModel)]="customer.occupation" name="occupation" placeholder="Pls Enter Occupation"/><br><br>
+
+  <label>ADDRESS : </label>
+  <input type="text" [(ngModel)]="customer.address" name="address" maxlength="50" placeholder="Pls Enter Address"/><br><br>
+
+
+  <label>USERNAME : </label>
+  <input type="text" [(ngModel)]="customer.uname" name="uname" placeholder="Pls Enter UserName"/><br><br>
+
+
+  <label>PASSWORD : </label>
+  <input type="password" [(ngModel)]="customer.password" name="password" placeholder="Pls Enter Password"/><br><br>
+
+  <label>GENDER : </label>
+  <input type="radio" [(ngModel)]="customer.gender"  value="Male" name="gender"/>Male &nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="radio" [(ngModel)]="customer.gender"  value="Female" name="gender"/>Female
+  <br><br>
+
+  <button type="button" (click)="registerData();">Register</button>
+
+</form>
+
+<!-- 
+<h1>Data Fetch From Spring Boot Application using ID.</h1>
+<label>ID : </label>
+  <input type="text" [(ngModel)]="id" name="id" placeholder="Pls Enter Id"/><br><br>
+<button type="button" (click)="getData(id);">GET DATA</button>
+
+<h1>Check customer Fetch Info</h1>
+{{customer1 | json}}
+
+<hr>
+
+<form>
+
+  <label>ID : </label>
+  <input type="text" [(ngModel)]="customer1.id" name="id" placeholder="Pls Enter Id"/><br><br>
+
+  <label>NAME : </label>
+  <input type="text" [(ngModel)]="customer1.name" name="name" placeholder="Pls Enter Name"/><br><br>
+
+  <label>ADDRESS : </label>
+  <input type="text" [(ngModel)]="customer1.address" name="address" placeholder="Pls Enter Address"/><br><br>
+
+
+  <label>customerNAME : </label>
+  <input type="text" [(ngModel)]="customer1.uname" name="uname" placeholder="Pls Enter customername"/><br><br>
+
+
+  <label>PASSWORD : </label>
+  <input type="text" [(ngModel)]="customer1.pass" name="pass" placeholder="Pls Enter Password"/><br><br>
+
+  <button type="button" (click)="updateData();">Update</button>
+
+</form> -->

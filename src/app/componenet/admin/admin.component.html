@@ -1,0 +1,22 @@
+<p>admin works!</p>
+
+<form>
+ 
+     <!-- <Label>USER</Label>
+      <input type="text" name="uname">  &nbsp;&nbsp;&nbsp;&nbsp;
+      -->
+      
+       <h5>Select Uname : </h5>
+       <select>
+         <option>select</option>
+            <option *ngFor="let item of ulist">
+            {{item}}
+            </option>
+       </select>
+
+
+      <Label>ROLE</Label>
+      <input type="text" name="rolename">&nbsp;&nbsp;
+
+      <input type="submit"  value="Assign"/>
+</form>
